@@ -35,7 +35,7 @@ To address this challenge, this work proposes a novel training-friendly stiffnes
 #### Action Space
 Incremental changes to joint angles, allowing the robotic arm to explore different configurations.
 ### PyBullet Simulation Environment
-please to this guide [https://github.com/WangSuhan/High-Stiffness-Configuration-Selection-of-Robotic-Arm-by-Reinforcement-Learning/blob/main/pybullet20quickstart20guide.479068914.pdf].
+please refer to this guide [https://github.com/WangSuhan/High-Stiffness-Configuration-Selection-of-Robotic-Arm-by-Reinforcement-Learning/blob/main/pybullet20quickstart20guide.479068914.pdf].
 ### Algorithm Selection
 TD3 and DATD3 are used in this project.
 
