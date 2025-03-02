@@ -40,5 +40,9 @@ please to this guide [https://github.com/WangSuhan/High-Stiffness-Configuration-
 TD3 and DATD3 are used in this project.
 
 ## RUN
+​```
 python -m visdom.server
+​```
+​```
 python main.py run --env=RLReachEnv --algo=DATD3_MLP --vis_name=Reach_DATD3_MLP
+​```
