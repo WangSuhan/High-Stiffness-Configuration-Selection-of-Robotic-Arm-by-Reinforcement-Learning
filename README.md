@@ -43,6 +43,7 @@ TD3 and DATD3 are used in this project.
 ​```
 python -m visdom.server
 ​```
+
 ​```
 python main.py run --env=RLReachEnv --algo=DATD3_MLP --vis_name=Reach_DATD3_MLP
 ​```
