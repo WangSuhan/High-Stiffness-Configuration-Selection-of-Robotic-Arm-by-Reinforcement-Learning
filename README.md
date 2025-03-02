@@ -12,3 +12,27 @@ From a robotics kinematics perspective, selecting high-stiffness postures for ro
 </div>
 
 ## Method
+
+### Problem Formulation
+<div style="text-align: justify">
+In robotic machining tasks, we face a multi-objective optimization problem: the robotic arm needs to accurately reach specified positions in Cartesian space while maintaining high-stiffness configurations to resist external forces during machining. Reinforcement learning provides an effective solution to this problem without requiring explicit complex stiffness mathematical models.
+</div>
+
+### Stiffness Metrics
+<div style="text-align: justify">
+The stiffness characteristics of a robotic arm in a specific configuration can be measured using various metrics, such as the minimum eigenvalue of the stiffness matrix, condition number of the stiffness ellipsoid, or determinant of the stiffness matrix. However, these conventional metrics can create training difficulties due to discontinuities and abrupt changes in certain workspace regions.
+</div>
+<br>
+<div style="text-align: justify">
+To address this challenge, this work proposes a novel training-friendly stiffness metric that provides smoother gradients and better numerical stability during reinforcement learning. Our metric combines stiffness performance evaluation with mathematical properties conducive to stable optimization, avoiding the extreme value fluctuations that can interrupt the learning process near singularities or workspace boundaries.
+</div>
+
+### Reinforcement Learning Framework Design
+#### State Space
+1. Current joint angles of the robotic arm
+2. Target position and orientation
+3. Stiffness metrics of the current configuration
+#### Action Space
+Incremental changes to joint angles, allowing the robotic arm to explore different configurations.
+### PyBullet Simulation Environment
+please to this guide [https://github.com/WangSuhan/High-Stiffness-Configuration-Selection-of-Robotic-Arm-by-Reinforcement-Learning/blob/main/pybullet20quickstart20guide.479068914.pdf].
